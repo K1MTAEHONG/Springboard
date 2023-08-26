@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>게시물 작성 폼입니다ㄱㄱㄱ</title>
+    <title>게시물 작성 폼입니다</title>
 </head>
 
 <style>
@@ -12,12 +12,12 @@
         margin: 40px auto 0;
     }
 
-    .layout > input{
+    .layout input{
         width: 100%;
         box-sizing:border-box;
     }
 
-    .layout > textarea {
+    .layout textarea {
         width : 100%;
         margin-top : 10px;
         min-height: 300px;
@@ -28,10 +28,11 @@
 
 <body>
     <div class = "layout">
-        <input type="text">
-        <textarea></textarea>
-        <button>작성</button>
-
+        <form action = "/board/writepro" method = "post">
+        <input name ="title" type="text">
+        <textarea name="content"></textarea>
+        <button type="submit">작성</button>
+        </form>
     </div>
 </body>
 </html>
