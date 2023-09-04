@@ -37,4 +37,13 @@ public class BoardController {
 
         return "boardlist";
     }
+
+    @GetMapping("/board/view")  //localhost:8000/board/view?id=1
+    public String boardView(Model model, Integer id) {          //다시 넘겨줄때는 model을 적어줘야함
+
+        model.addAttribute("board", boardService.boardView(id));
+        return "boardview";
+    }
+
+
 }
