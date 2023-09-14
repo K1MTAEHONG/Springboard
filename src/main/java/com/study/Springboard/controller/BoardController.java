@@ -51,7 +51,7 @@ public class BoardController {
 
         boardService.boardDelete(id);
 
-        return "redirect:/board/list";      // 삭제 하면 다시 리스트 페이지로 가게끔
+        return "redirect:/board/list";      // 삭제 하면 다시 리스트 페이지 로 가게끔
     }
 
 
