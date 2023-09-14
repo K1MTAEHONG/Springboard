@@ -30,4 +30,9 @@ public class BoardService {
 
         return boardRepository.findById(id).get();    //Integer id 를 받아야댐 get으로 받아옴
     }
+
+    //특정 게시물 삭제
+    public void boardDelete(Integer id) {           // void 는 리턴값 안받음 게시글 번호가 들어왔을떄 id값을 삭제 해준다
+        boardRepository.deleteById(id);
+    }
 }
